@@ -1,4 +1,4 @@
-package main
+package ting
 
 import (
 	"os"
@@ -13,7 +13,7 @@ type DbConfig struct {
 	Port       int
 }
 
-func parseDbConfig() (DbConfig, error) {
+func ParseDbConfig() (DbConfig, error) {
 	port, err := strconv.Atoi(os.Getenv("DB_PORT"))
 
 	if err != nil {

@@ -1,4 +1,4 @@
-package main
+package ting
 
 import (
 	"database/sql"
