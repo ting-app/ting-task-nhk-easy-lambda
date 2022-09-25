@@ -39,7 +39,7 @@ func RunTask() error {
 		ting := Ting{
 			ProgramId:   programId,
 			Title:       news.Title,
-			Description: news.OutlineWithRuby,
+			Description: news.Outline,
 			AudioUrl:    news.M3u8Url,
 			Content:     news.BodyWithoutRuby,
 			CreatedAt:   now,
