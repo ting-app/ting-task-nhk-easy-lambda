@@ -4,10 +4,10 @@ An AWS Lambda that saves [NHK NEWS WEB EASY](https://www3.nhk.or.jp/news/easy/) 
 ## Usage
 Create an AWS Lambda function, and run `sh ./package.sh` to package the function, then upload `lambda.zip` to your Lambda function. Also add the following environment variables to the lambda function:
 
- * DB_USER_NAME
- * DB_PASSWORD
- * DB_HOST
- * DB_PORT
+ * DB_USER_NAME: user name of MySQL database
+ * DB_PASSWORD: password of user
+ * DB_HOST: host of MySQL database
+ * DB_PORT: port of MySQL database
 
 ## License
 [MIT](LICENSE)
