@@ -7,11 +7,13 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 )
 
+const driverName = "mysql"
+
 var db *sql.DB
 
 func InitDb(config DbConfig) error {
 	var err error
-	db, err = sql.Open(config.DriverName, fmt.Sprintf("%s:%s@tcp(%s:%d)/ting?parseTime=true", config.UserName, config.Password, config.Host, config.Port))
+	db, err = sql.Open(driverName, fmt.Sprintf("%s:%s@tcp(%s:%d)/ting?parseTime=true", config.UserName, config.Password, config.Host, config.Port))
 
 	if err != nil {
 		return err

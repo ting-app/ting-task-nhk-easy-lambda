@@ -6,11 +6,10 @@ import (
 )
 
 type DbConfig struct {
-	DriverName string
-	UserName   string
-	Password   string
-	Host       string
-	Port       int
+	UserName string
+	Password string
+	Host     string
+	Port     int
 }
 
 func ParseDbConfig() (DbConfig, error) {
@@ -21,10 +20,9 @@ func ParseDbConfig() (DbConfig, error) {
 	}
 
 	return DbConfig{
-		DriverName: os.Getenv("DB_DRIVER_NAME"),
-		UserName:   os.Getenv("DB_USER_NAME"),
-		Password:   os.Getenv("DB_PASSWORD"),
-		Host:       os.Getenv("DB_HOST"),
-		Port:       port,
+		UserName: os.Getenv("DB_USER_NAME"),
+		Password: os.Getenv("DB_PASSWORD"),
+		Host:     os.Getenv("DB_HOST"),
+		Port:     port,
 	}, nil
 }
