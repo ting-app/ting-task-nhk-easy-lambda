@@ -2,7 +2,12 @@
 An AWS Lambda that saves [NHK NEWS WEB EASY](https://www3.nhk.or.jp/news/easy/) as ting.
 
 ## Usage
-Create an AWS Lambda function, and run `sh ./package.sh` to package the function, then upload `lambda.zip` to your Lambda function.
+Create an AWS Lambda function, and run `sh ./package.sh` to package the function, then upload `lambda.zip` to your Lambda function. Also add the following environment variables to the lambda function:
+
+ * DB_USER_NAME
+ * DB_PASSWORD
+ * DB_HOST
+ * DB_PORT
 
 ## License
 [MIT](LICENSE)
