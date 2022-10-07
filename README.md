@@ -11,6 +11,9 @@ Then run `sh ./package.sh` to package the function, and upload `lambda.zip` to y
  * DB_HOST: host of MySQL database
  * DB_PORT: port of MySQL database
 
+Finally, create an EventBridge role to trigger the Lambda function daily:
+1. Select `Schedule` as `Rule type`
+2. This task relies on [nhk-easy-task](https://github.com/nhk-news-web-easy/nhk-easy-task) which runs at 10:00 AM (UTC) every day, so the cron expression should be set after that, for example `30 10 * * ? *`
 
 ## License
 [MIT](LICENSE)
