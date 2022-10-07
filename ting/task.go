@@ -2,12 +2,15 @@ package ting
 
 import (
 	"github.com/nhk-news-web-easy/nhk-news-fetcher-go"
+	"log"
 	"time"
 )
 
 const programId = 1
 
 func RunTask() error {
+	log.Println("Start to fetch news")
+
 	now := time.Now().UTC()
 	startDate := time.Date(now.Year(), now.Month(), now.Day(), 0, 0, 0, 0, time.UTC)
 	endDate := time.Date(now.Year(), now.Month(), now.Day(), 23, 59, 59, 0, time.UTC)
@@ -18,6 +21,8 @@ func RunTask() error {
 	}
 
 	if newsList == nil || len(newsList) == 0 {
+		log.Println("No news found")
+
 		return nil
 	}
 
