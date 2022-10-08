@@ -17,7 +17,7 @@ func RunTask() error {
 	newsList, err := nhk_fetcher.FetchNews(startDate, endDate)
 
 	if err != nil {
-		log.Printf("Fetch news error, %v", err)
+		log.Printf("Fetch news error, %v\n", err)
 
 		return err
 	}
@@ -26,6 +26,8 @@ func RunTask() error {
 		log.Println("No news found")
 
 		return nil
+	} else {
+		log.Printf("Found %v news\n", len(newsList))
 	}
 
 	dbConfig, err := ParseDbConfig()
