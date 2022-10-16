@@ -4,7 +4,7 @@ An AWS Lambda that saves [NHK NEWS WEB EASY](https://www3.nhk.or.jp/news/easy/) 
 ## Getting Started
 First create an AWS Lambda function, click `Enable VPC` under `Advanced settings`, and select the VPC of your MySQL instance. Remember to add the security group of your Lambda function as an inbound rule to your MySQL instance.
 
-Second, follow the instructions [here](https://blog.theodo.com/2020/01/internet-access-to-lambda-in-vpc/) to enable the lambda to have the access to Internet.
+Second, follow the instructions [here](https://blog.theodo.com/2020/01/internet-access-to-lambda-in-vpc/) to enable the lambda to access to Internet.
 
 Then run `sh ./package.sh` to package the function, and upload `lambda.zip` to your Lambda function. Also add the following environment variables to the Lambda function:
 
