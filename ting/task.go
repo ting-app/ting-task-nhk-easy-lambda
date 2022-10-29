@@ -50,7 +50,7 @@ func RunTask() error {
 			Title:       news.Title,
 			Description: news.Outline,
 			AudioUrl:    news.M3u8Url,
-			Content:     news.BodyWithoutRuby,
+			Content:     news.BodyWithoutHtml,
 			CreatedAt:   now,
 			UpdatedAt:   now,
 		}
