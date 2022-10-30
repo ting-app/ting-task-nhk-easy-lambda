@@ -9,7 +9,7 @@ Second, follow the instructions [here](https://blog.theodo.com/2020/01/internet-
 Then run `sh ./package.sh` to package the function, and upload `lambda.zip` to your Lambda function. Also add the following environment variables to the Lambda function:
 
  * DB_USER_NAME: user name of MySQL database
- * DB_PASSWORD: password of user
+ * DB_PASSWORD: password of MySQL user
  * DB_HOST: host of MySQL database
  * DB_PORT: port of MySQL database
 
