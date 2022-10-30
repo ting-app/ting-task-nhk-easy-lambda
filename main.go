@@ -2,7 +2,7 @@ package main
 
 import (
 	"context"
-	"github.com/ting-app/ting-task-nhk-easy/ting"
+	"github.com/ting-app/ting-task-nhk-easy-lambda/ting"
 	"log"
 
 	"github.com/aws/aws-lambda-go/lambda"

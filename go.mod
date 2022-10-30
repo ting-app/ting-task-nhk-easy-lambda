@@ -1,4 +1,4 @@
-module github.com/ting-app/ting-task-nhk-easy
+module github.com/ting-app/ting-task-nhk-easy-lambda
 
 go 1.18
 
